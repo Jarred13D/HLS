@@ -26,3 +26,7 @@
     border-color: var(--color-gray-200, currentColor);
   }
 }
+
+body {
+  @apply bg-stone-950 text-stone-100;
+}

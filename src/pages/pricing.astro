@@ -6,58 +6,51 @@ import PricingCard from "@/components/pricing.astro";
 
 const pricing = [
   {
-    name: "Personal",
-    price: "Free",
+    name: "Mowing",
+    price: "Flat Rate",
     popular: false,
     features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
-      "Astro Sub domain",
-      "Basic Integrations",
-      "Community Support",
-    ],
-    button: {
-      text: "Get Started",
-      link: "/",
-    },
-  },
-  {
-    name: "Startup",
-    price: {
-      monthly: "$19",
-      annual: "$16",
-      discount: "10%",
-      original: "$24",
-    },
-    popular: true,
-    features: [
-      "All Free Features",
-      "Up to 20 users",
-      "20 Custom domains",
-      "Unlimited Collaborators",
-      "Advanced Integrations",
-      "Priority Support",
-    ],
-    button: {
-      text: "Get Started",
-      link: "#",
-    },
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    popular: false,
-    features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated Account Manager",
-      "24/7 Phone Support",
+      "Professional Lawn Mowing",
+      "Precision Edging Around Walkways",
+      "Grass height Customized to Season",
+      "Reliable Scheduling",
+      "Affordable Flat Rate Pricing",
     ],
     button: {
       text: "Contact us",
+      link: "/contact",
+    },
+  },
+  {
+    name: "Landscaping Jobs",
+    price: "$75/hr",
+    popular: false,
+    features: [
+      "Professional Edging and Trimming",
+      "Mulch Laying and Bed Preparation",
+      "Season yard Cleanups (Spring & Fall)",
+      "Weed Removal and Prevention",
+      "General Landscaping Support",
+    ],
+    button: {
+      text: "Get Started",
+      link: "/contact",
+    },
+  },
+  {
+    name: "Enterprise Plan",
+    price: "Custom",
+    popular: false,
+    features: [
+      "All Landscaping Services Included",
+      "Custom Contracts Available",
+      "Priority Scheduling",
+      "Dedicated Support",
+      "Commercial Property Maintenance",
+      "Bulk Project Pricing Options",
+    ],
+    button: {
+      text: "Get Started",
       link: "/contact",
     },
   },
@@ -69,12 +62,12 @@ const pricing = [
     <Sectionhead>
       <Fragment slot="title">Pricing</Fragment>
       <Fragment slot="desc">
-        Simple & Predictable pricing. No Surprises.
+        You'll always know what you're paying for — before the job begins.
       </Fragment>
     </Sectionhead>
 
     <div
-      class="grid md:grid-cols-3 gap-10 mx-auto max-w-(--breakpoint-lg) mt-12">
+      class="grid md:grid-cols-3 gap-10 mx-auto max-w-(--breakpoint-lg) mt-12 items-stretch">
       {pricing.map((item) => <PricingCard plan={item} />)}
     </div>
   </Container>

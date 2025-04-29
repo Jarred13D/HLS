@@ -4,66 +4,68 @@ import { Icon } from "astro-icon/components";
 
 const features = [
   {
-    title: "Bring Your Own Framework",
+    title: "Lawn Mowing and Edging",
     description:
-      "Build your site using React, Svelte, Vue, Preact, web components, or just plain ol' HTML + JavaScript.",
-    icon: "bx:bxs-briefcase",
+      "Keep your lawn clean, crisp and evenly trimmed with precision mowing and sharp edging for a polished, professional look.",
+    icon: "bx:bxs-home",
   },
   {
-    title: "100% Static HTML, No JS",
+    title: "Mulch Installation",
     description:
-      "Astro renders your entire page to static HTML, removing all JavaScript from your final build by default.",
-    icon: "bx:bxs-window-alt",
+      "Enhance curb appeal and protect your plants with high-quality mulch that locks in moisture and controls weeds year-round.",
+    icon: "bx:bxs-leaf",
   },
   {
-    title: "On-Demand Components",
+    title: "Spring & Fall Cleanups",
     description:
-      "Need some JS? Astro can automatically hydrate interactive components when they become visible on the page.  ",
-    icon: "bx:bxs-data",
+      "Refresh your yard for the season with thorough debris removal, leaf cleanup and prepping your lawn for healthy growth.",
+    icon: "bx:bxs-cloud",
   },
   {
-    title: "Broad Integration",
+    title: "Hedge & Shrub Trimming",
     description:
-      "Astro supports TypeScript, Scoped CSS, CSS Modules, Sass, Tailwind, Markdown, MDX, and any other npm packages.",
-    icon: "bx:bxs-bot",
+      "Shape and maintain healthy, beautiful shrubs and hedges with expert trimming that promotes growth and enhances your landscape.",
+    icon: "bx:bxs-tree",
   },
   {
-    title: "SEO Enabled",
+    title: "Weed Control",
     description:
-      "Automatic sitemaps, RSS feeds, pagination and collections take the pain out of SEO and syndication. It just works!",
-    icon: "bx:bxs-file-find",
+      "Eliminate stubborn weeds and protect your lawn’s health with targeted, environmentally safe weed control solutions.",
+    icon: "bx:bxs-shield",
   },
   {
-    title: "Community",
+    title: "Custom Lawn Maintenance Plans",
     description:
-      "Astro is an open source project powered by hundreds of contributors making thousands of individual contributions.",
-    icon: "bx:bxs-user",
+      "Tailored lawn care programs designed to meet your specific needs — keeping your yard lush, green, and healthy all year long.",
+    icon: "bx:bxs-calendar",
   },
 ];
 ---
 
-<div class="mt-16 md:mt-0">
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
-    Everything you need to start a website
-  </h2>
-  <p class="text-lg mt-4 text-slate-600">
-    Astro comes batteries included. It takes the best parts of state-of-the-art
-    tools and adds its own innovations.
-  </p>
-</div>
+<div class="mt-16 rounded-2xl bg-stone-900/50 p-10 shadow-lg">
+  <div class="mt-16 md:mt-0">
+    <h2 class="text-4xl lg:text-5xl font-bold text-center lg:tracking-tight">
+      Landscaping Services
+    </h2>
+    <p class="text-lg text-center mt-4 text-gray-400">
+      We offer complete, professional lawncare services tailored to keep your
+      yard looking its best all season long.
+    </p>
+  </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  {
-    features.map((item) => (
-      <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+    {
+      features.map((item) => (
+        <div class="flex gap-4 items-start">
+          <div class="mt-1 bg-stone-950 rounded-full  p-2 w-8 h-8 shrink-0">
+            <Icon class="text-green-500" name={item.icon} />
+          </div>
+          <div>
+            <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+            <p class="text-gray-400 mt-2 leading-relaxed">{item.description}</p>
+          </div>
         </div>
-        <div>
-          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
-          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
-        </div>
-      </div>
-    ))
-  }
+      ))
+    }
+  </div>
 </div>
