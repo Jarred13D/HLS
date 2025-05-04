@@ -13,14 +13,37 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
 
 <Layout title="About">
   <Container>
-    <Sectionhead>
-      <Fragment slot="title">About</Fragment>
-      <Fragment slot="desc">I am passionate lawncare professional.</Fragment>
-    </Sectionhead>
+    <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
+      <h2 class="font-bold text-3xl text-white justify-center text-center">
+        About <span class="text-green-600">Me</span>
+      </h2>
+
+      <p class="text-lg leading-relaxed text-gray-400">
+        My name is Nikolas Hampton and I’m the proud owner of <strong
+          >Hampton Lawn Solutions</strong
+        >.<br />
+        <br />
+        I first started cutting lawns as a kid, mowing neighbors’ yards while they
+        were away on vacation. I quickly fell in love with the transformation — seeing
+        an overgrown yard turn clean, sharp, and full of life sparked a passion that
+        never left me.<br />
+        <br />
+        I went on to study business and play collegiate football, but after a series
+        of injuries, I made the decision to fully commit to my dream: building my
+        own lawn care company.<br />
+        <br />
+        At Hampton Lawn Solutions, my mission is simple — to show up on time, work
+        with integrity, and make your yard look its absolute best. Whether you need
+        a simple mow or a full-service landscaping plan, I’m here to help bring your
+        vision to life.<br />
+        <br />
+        Let’s turn your yard into an oasis.
+      </p>
+    </div>
 
     <div class="flex flex-col gap-3 mx-auto max-w-4xl mt-16">
-      <h2 class="font-bold text-3xl text-white">
-        About Hampton Lawn Solutions
+      <h2 class="font-bold text-3xl text-white justify-center text-center">
+        About Hampton <span class="text-green-600">Lawn Solutions</span>
       </h2>
       <p class="text-lg leading-relaxed text-gray-400">
         At Hampton Lawn Solutions, we take pride in bringing out the beauty in
@@ -31,7 +54,7 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
         to detail and a passion for perfection.
       </p>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <!-- <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <div class="group">
@@ -55,6 +78,6 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
           </div>
         ))
       }
-    </div>
+    </div> -->
   </Container>
 </Layout>
