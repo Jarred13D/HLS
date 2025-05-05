@@ -10,8 +10,6 @@ export interface Props {
   title: string;
 }
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
-
 const resolvedImageWithDomain = new URL(
   "/opengraph.jpg",
   Astro.site
@@ -35,22 +33,16 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      description="Astroship is a starter website template for Astro built with TailwindCSS."
-      canonical={canonicalURL}
-      twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
-        card: "summary_large_image",
-      }}
+      description="Hampton Lawn Solutions is a lawn care company that provides professional lawn maintenance services to homeowners in the area. We specialize in mowing, trimming, edging and more."
       openGraph={{
         basic: {
-          url: canonicalURL,
+          url: "https://hamptonlawnsolutions.com",
           type: "website",
-          title: `Astroship - Starter Template for Astro`,
+          title: `Hampton Lawn Solutions`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "Astroship Homepage Screenshot",
+          alt: "Hampton Lawn Solutions",
         },
       }}
     />
