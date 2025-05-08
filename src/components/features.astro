@@ -44,30 +44,41 @@ const features = [
 
 <div>
   <h2 class="text-4xl font-bold text-center mb-6">Project Gallery</h2>
-  <p class="text-center text-gray-400 mb-10">
+  <p class="text-center text-gray-400 text-lg md:text-xl mb-10">
     A few examples of the work we’ve done for homeowners in the area.
   </p>
 
-  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-2">
+  <div
+    class="aspect-w-4 aspect-h-3 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-2 gap-6 px-2">
+    <img
+      src="/dads-yard-1.jpg"
+      alt="Freshly mowed lawn"
+      class="w-full h-full object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+    />
+    <img
+      src="/dads-yard-2.jpg"
+      alt="Freshly mowed lawn"
+      class="w-full h-full object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+    />
     <img
       src="/front-lawn-checkered.jpg"
       alt="Freshly mowed lawn"
-      class="w-full h-64 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+      class="w-full h-full object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
     />
     <img
       src="/front-lawn-checkered-left.jpg"
       alt="Freshly mowed lawn"
-      class="w-full h-64 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+      class="w-full h-full object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
     />
     <img
       src="/nikolas-project-back-corner.jpg"
       alt="Freshley mowed lawn"
-      class="w-full h-64 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+      class="w-full h-full object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
     />
     <img
       src="/nikolas-project-side-house.jpg"
       alt="Freshly mowed lawn"
-      class="w-full h-64 object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
+      class="w-full h-full object-cover rounded-xl shadow-md hover:scale-105 transition-transform duration-300"
     />
   </div>
 </div>
@@ -76,7 +87,7 @@ const features = [
     <h2 class="text-4xl lg:text-5xl font-bold text-center lg:tracking-tight">
       Landscaping Services
     </h2>
-    <p class="text-lg text-center mt-4 text-gray-400">
+    <p class="text-lg md:text-xl text-center mt-4 text-gray-400">
       We offer complete, professional lawncare services tailored to keep your
       yard looking its best all season long.
     </p>
